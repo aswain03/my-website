@@ -23,7 +23,7 @@
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid">
                         <li class="nav__item">
-                            <a href="#home" class="nav__link">
+                            <a href="#home" class="nav__link active-link">
                                 <i class="uil uil-anchor nav__icon"></i> Home
                             </a>
                         </li>
@@ -38,7 +38,7 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#services" class="nav__link">
+                            <a href="#experience" class="nav__link">
                                 <i class="uil uil-laptop nav__icon"></i> Experience
                             </a>
                         </li>
@@ -56,6 +56,8 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
                 <div class="nav__btns">
+                    <i class="uil uil-moonset change-theme" id="theme-button"></i>
+                  
                     <div class="nav__toggle" id="nav-toggle">
                         <i class="uil uil-list-ui-alt"></i>
                     </div>
@@ -66,8 +68,8 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="c-hero c-hero--one u-pos-relative">
+            <section class="home" id="home">
+                <div class="c-hero c-hero--one u-pos-relative" >
                     <div class="o-container u-pos-relative u-zi-10">
                       <div class="o-row u-pos-relative">
                         <div class="o-col-10 o-col-offset-1 o-col-9@lg o-col-offset-3@lg">
@@ -92,9 +94,7 @@
                   </div>
                 <div class="home__container container grid">
                     <div class="home__content grid">
-                        
                         <div class="home__data">
-                            
                             <h3 class="home__subtitle">Software Engineer</h3>
                             <p class="home__description">
                                 This is a description of me, look at me go, im so good. In fact I may just be brilliant. 
@@ -296,7 +296,7 @@
             </section>
 
             <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section">
+            <section class="qualification section" id="experience">
                 <h3 class="section__title">Experience</h3>
                 <span class="section__subtitle">My Route</span>
                 <div class="experience__container container">
@@ -490,11 +490,41 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-         
+         <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h3 class="footer__title">Alex.</h3>
+                    <span class="footer__subtitle">Software Engineer</span>
+                </div>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/alexander-swain/" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://www.github.com/aswain03" target="_blank" class="footer__social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                </div>
+            </div>
+           
+         </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
-        
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-circle-up scrollup__icon"></i>
+        </a>
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
