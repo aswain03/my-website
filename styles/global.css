@@ -581,6 +581,7 @@ img {
 }
 .contact__information {
     display: flex;
+    padding-left: 16rem;
     margin-bottom: var(--mb-2);
 }
 .contact__icon {
@@ -740,7 +741,7 @@ img {
     }
 }
 
-@media (min-width: 968) {
+@media (min-width: 992px) {
     .container {
         margin-left: auto;
         margin-right: auto;
@@ -848,7 +849,7 @@ img {
         padding: 0;
     }
     .home__social{
-        transform:translateX(-6rem);
+        padding-top: 6rem;
     }
     .portfolio__content{
         column-gap: 5rem;
