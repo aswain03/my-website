@@ -1,26 +1,21 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+// Hide and show menu
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
 if(navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
     })
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
 if(navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
 
-
-/*==================== REMOVE MENU MOBILE ====================*/
+// remove menu on mobile
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction() {
@@ -29,7 +24,7 @@ function linkAction() {
 }
 navLink.forEach(link => link.addEventListener('click', linkAction))
 
-/*==================== ACCORDION SKILLS ====================*/
+//  Hide and show skills
 const skillsContent = document.getElementsByClassName('skills__content'),
     skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -47,10 +42,7 @@ skillsHeader.forEach((header) => {
     header.addEventListener('click', toggleSkills)
 })
 
-
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+// show active link on menu
 const sections = document.querySelectorAll("section[id]")
 
 function scrollActive() {
@@ -69,21 +61,22 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+
+
 function scrollHeader(){
     const nav = document.getElementById("header")
     if(this.scrollY >=5) nav.classList.add('scroll-header'); else nav.classList.remove("scroll-header")
 }
 window.addEventListener('scroll', scrollHeader)
 
-/*==================== SHOW SCROLL UP ====================*/ 
+// show the scroll to top button
 function scrollTop() {
     const scrollTop = document.getElementById("scroll-up")
     if(this.scrollY >= 650) scrollTop.classList.add("show-scroll"); else scrollTop.classList.remove("show-scroll")
 }
 window.addEventListener('scroll', scrollTop)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+// dark and light mode
 const themeButton = document.getElementById("theme-button")
 const darkTheme = "dark-theme"
 const iconTheme = "uil-sunset"
