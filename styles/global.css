@@ -270,12 +270,12 @@ img {
 
 .home__social-icon {
     font-size: 1.25rem;
-    color: var(--first-color);
+    color: var(--first-color-alt);
 
 }
 
 .home__social-icon:hover {
-    color: var(--first-color-alt);
+    color: var(--first-color-second);
 }
 
 
